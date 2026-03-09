@@ -1,4 +1,4 @@
-import { Menu, Home, Users, DollarSign } from 'lucide-react';
+import { Menu, Home, Users, DollarSign, Gamepad2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetHeader, SheetClose } from '@/components/ui/sheet';
 
@@ -12,6 +12,8 @@ export function MobileMenu({ activeTab, setActiveTab }: MobileMenuProps) {
     { id: 'home', label: 'Home', icon: Home },
     { id: 'leads', label: 'Leads', icon: Users },
     { id: 'vendas', label: 'Vendas', icon: DollarSign },
+    { id: 'jogo', label: 'Jogo', icon: Gamepad2 }
+
   ];
 
   return (
@@ -36,11 +38,10 @@ export function MobileMenu({ activeTab, setActiveTab }: MobileMenuProps) {
               <SheetClose key={item.id} render={
                 <Button
                   variant={activeTab === item.id ? 'secondary' : 'ghost'}
-                  className={`w-full justify-start text-[15px] font-medium h-12 ${
-                    activeTab === item.id 
-                      ? 'bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 border border-blue-500/20' 
-                      : 'text-slate-400 hover:bg-slate-800 hover:text-slate-100 border border-transparent'
-                  }`}
+                  className={`w-full justify-start text-[15px] font-medium h-12 ${activeTab === item.id
+                    ? 'bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 border border-blue-500/20'
+                    : 'text-slate-400 hover:bg-slate-800 hover:text-slate-100 border border-transparent'
+                    }`}
                   onClick={() => setActiveTab(item.id)}
                 >
                   <item.icon className="mr-4 h-5 w-5" />

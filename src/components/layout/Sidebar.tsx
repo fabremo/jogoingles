@@ -1,4 +1,4 @@
-import { Home, Users, DollarSign, Gamepad, Gamepad2 } from 'lucide-react';
+import { Home, Users, DollarSign, Gamepad2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface SidebarProps {
@@ -18,7 +18,7 @@ export function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
     <div className="hidden lg:flex w-64 flex-col bg-slate-900 text-slate-100 border-r border-slate-800 p-4 h-full">
       <div className="mb-8 px-4 py-2">
         <h1 className="text-3xl font-black tracking-tight bg-gradient-to-br from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">
-          DashApp.
+          Inglês pra Viagem.
         </h1>
       </div>
       <nav className="flex-1 space-y-2">
@@ -43,7 +43,7 @@ export function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
             JL
           </div>
           <div>
-            <p className="text-sm font-semibold text-slate-200">João Lucas</p>
+            <p className="text-sm font-semibold text-slate-200">Fábio Bressane</p>
             <p className="text-xs text-slate-400">Admin</p>
           </div>
         </div>
